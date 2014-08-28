@@ -1,0 +1,13 @@
+=head1 Arduino temperature reader
+
+This is the source for a small temperature reader that is used in my office.
+
+F<temperature.ino> contains the Arduino sourcecode. It assumes temperature
+sensors on ports 0 and 2 and a light sensor on port 1.
+
+F<writeconfig.pl> writes the serial port configuration. You might have to
+adjust the port name to your operating system.
+
+F<read.pl> reads the temperature and light values from the serial port in an
+infinite loop.
+
